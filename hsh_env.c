@@ -15,7 +15,7 @@ int hsh_env(char **arg_list, env_t *envp)
 		print_env(envp);
 		return (0);
 	}
-	
+
 	for (i = 1; arg_list[i] != NULL; i++)
 		arg_list[i - 1] = arg_list[i];
 	arg_list[i - 1] = arg_list[i];
