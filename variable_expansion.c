@@ -52,7 +52,7 @@ void variable_expansion(buffer *b, env_t *envp, int retrn_value)
 char *_getpid(void)
 {
 	char path[BUFSIZE], id[BUFSIZE];
-	char *hold, *ppid;
+	char *hold, *ppid="";
 	pid_t pid;
 	int fd;
 
